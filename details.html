@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <title>Rules</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: rgba(255,255,255,0.75);
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.00);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>卡牌游戏规则</h1>
+    <p>开始游戏后，您将被随机匹配到三位少女与您进行对局。</p>
+	<p>每个回合中，系统将随机从6张三星卡、6张四星卡和4张魔神卡中选择一张抽出（不放回）。</p>
+	<ul>
+		<li>若抽到三星卡，所有<b>在场玩家</b>将获得一个地球币，同时一个地球币将被放入公共地球币池中；</li>
+		<li>若抽到四星卡，所有<b>在场玩家</b>将获得两个地球币，同时两个地球币将被放入公共地球币池中；</li>
+		<li>若抽到魔神卡，本局的第一张不进行任何操作，抽到第二张时游戏结束。</li>
+	</ul>
+    <p>*公共地球币池位于抽卡结果下方。</p>
+	<p>每个回合结束后，您都有10秒钟的时间来决定是否退出游戏。此时游戏不结束，将继续进行直至所有参赛者均退场或第二张魔神卡被抽到，但您在本场游戏中的收益将被结算，您<b>不再收到由抽卡产生的地球币收益</b>。</p>
+	<p>游戏结束后，<b>已退出游戏（已结算）</b>且持有地球币数量最多的一方获得胜利。</p>
+    <!-- <p><a href="main.php?start" target="_self">【点此立即开始】</a></p> -->
+    <hr />
+    <p><a href="main.php?init" target="_self">【返回开始页面】</a></p>
+</div>
+</body>
+</html>

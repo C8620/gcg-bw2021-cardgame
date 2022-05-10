@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>cd</title>
+</head>
+<body>
+<center>
+<form name=loading>
+<P align=center><FONT  style='FONT-FAMILY: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;' color=#000000 size=5>您有10秒钟时间选择是否退出游戏</FONT>
+<BR />
+<font size=5>
+<INPUT style='PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bolder; PADDING-BOTTOM: 0px; COLOR: #000000; BORDER-TOP-style: none; PADDING-TOP: 0px; FONT-FAMILY: Arial; BORDER-RIGHT-style: none; BORDER-LEFT-style: none; BORDER-BOTTOM-style: none; font-size: large;'
+size=72 name=chart>
+<BR />
+<INPUT style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; COLOR: #000000; BORDER-BOTTOM: medium none; TEXT-ALIGN: center; font-size: large;" size=49 name=percent>
+</font>
+</center>
+<script language="javascript">
+var bar=0
+var line="|||||||||||||"
+var amount="|||||||||||||"
+count()
+function count(){
+    bar=bar+1
+    amount =amount + line
+    document.loading.chart.value=amount
+    document.loading.percent.value=10-bar+"s"
+    if (bar<10){
+        setTimeout("count()",1000);
+    }else{
+        parent.location = "https://game.gcg.moe/bw2021/main.php";
+    }
+}
+</script>
+</P>
+</form>
+</body>
+</html>
