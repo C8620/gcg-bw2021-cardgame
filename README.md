@@ -1,5 +1,7 @@
 # gcg-bw2021-cardgame
 
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) 
+
 This is a PHP implementation of the card-based game that was played on the 2021 Bilibili World at the station of Double Life World.
 
 Overall, this game is stateless - no database is needed for configuration, and making cheating very easy for someone knowing what they are doing.
